@@ -1,0 +1,26 @@
+/* fixed positioning
+------------------------------------------------------------------*/
+
+.widget.widget-secondary-menu.fixed {
+  top: 20px;
+  position: fixed;
+  min-width: 360px;
+}
+
+.admin-bar .widget.widget-secondary-menu.fixed {
+  top: 58px;
+}
+
+@media (max-width: 1139px) {
+  .widget.widget-secondary-menu.fixed {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .widget.widget-secondary-menu.fixed,
+  .widget.widget-secondary-menu {
+    position:static;
+    margin-bottom:35px;
+  }
+}

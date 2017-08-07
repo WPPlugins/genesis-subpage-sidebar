@@ -1,0 +1,108 @@
+/* styles apply to both left and right side
+------------------------------------------------------------------*/
+
+.sidebar .widget.widget-secondary-menu {
+  padding: 0px;
+  background: none;
+}
+
+.sidebar .widget.widget-secondary-menu li {
+  margin: 0px 0px -1px;
+  padding: 0px;
+  position: relative;
+}
+
+.sidebar .widget.widget-secondary-menu li a {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 12px 17px 12px 17px;
+  background-color: white;
+  height: 50px;
+}
+
+.sidebar .widget.widget-secondary-menu li:last-child a {
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar .widget.widget-secondary-menu li a:hover {
+  background-color: #ebebeb;
+}
+
+.sidebar .widget.widget-secondary-menu li.current_page_item a {
+  background-color: #ebebeb;
+  border-left: none;
+}
+
+.sidebar .widget.widget-secondary-menu li.current_page_item a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-style: solid;
+  z-index: 2;
+}
+
+.sidebar .widget.widget-secondary-menu li.current_page_item a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-style: solid;
+  z-index: 1;
+}
+
+/* styles apply to the right sidebar only
+------------------------------------------------------------------*/
+
+body.content-sidebar .sidebar .widget.widget-secondary-menu li a {
+  margin-left: 20px;
+}
+
+body.content-sidebar .sidebar .widget.widget-secondary-menu li.current_page_item a::before {
+  left: 0px;
+  margin-left: 1px;
+  top:0px;
+  border-top-color: transparent;
+  border-right-color: #ebebeb;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-width: 25px 15px 25px 5px;
+}
+
+body.content-sidebar .sidebar .widget.widget-secondary-menu li.current_page_item a::after {
+  left: 0px;
+  margin-left: 0px;
+  top: 0px;
+  border-top-color: transparent;
+  border-right-color: #ddd;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-width: 25px 15px 25px 5px;
+}
+
+/* styles apply to the right sidebar only
+------------------------------------------------------------------*/
+
+body.sidebar-content .sidebar .widget.widget-secondary-menu li a {
+  margin-right: 20px;
+}
+
+body.sidebar-content .sidebar .widget.widget-secondary-menu li.current_page_item a::before {
+  right: 0px;
+  margin-right: 1px;
+  top:0px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #ebebeb;
+  border-width: 25px 5px 25px 15px;
+}
+
+body.sidebar-content .sidebar .widget.widget-secondary-menu li.current_page_item a::after {
+  right: 0px;
+  margin-right: 0px;
+  top: 0px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #ddd;
+  border-width: 25px 5px 25px 15px;
+}
